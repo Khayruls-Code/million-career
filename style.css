@@ -1,0 +1,60 @@
+.text-justify {
+  text-align: justify;
+}
+
+.testimonial-bg {
+  background-color: #051D33;
+  border-radius: 20px;
+}
+
+.blog {
+  background: linear-gradient(111.05deg, #FF4E50 -38.71%, #F9D423 103.54%);
+}
+
+.footer,
+.btn-bg {
+  background-color: #051D33;
+}
+
+.about-info p {
+  background-color: #53AFA4;
+  position: relative;
+  left: -150px;
+  padding: 60px 60px 80px;
+  line-height: 30px;
+}
+
+.about img {
+  z-index: -2;
+  position: relative;
+}
+
+.about-info p::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 16px solid #F1632A;
+  top: -40px;
+  right: -40px;
+  z-index: -1;
+}
+
+@media only screen and (max-width:1000px) {
+  .about-info p {
+    left: -150px;
+    padding: 50px 20px;
+  }
+
+  .about-info p::after {
+    border: 10px solid #F1632A;
+  }
+}
+
+@media only screen and (max-width:991px) {
+  .about-info p {
+    left: 0px;
+    top: 50px;
+    margin-bottom: 50px;
+  }
+}
